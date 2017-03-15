@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        
+        function Shape() {
+            this.area = 1;
+        };
+        
+        function Rectangle() { };
+        Rectangle.prototype = new Shape();
+
+        var a = new Rectangle();
+        console.log(a.area);
+
+    </script>
+</body>
+</html>
